@@ -5,9 +5,10 @@
 
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 
   #background {
-    height: 60%;
+    height: 45%;
 
     .circle {
       display: block;
@@ -16,7 +17,7 @@
 
     .one {
       top: 0%;
-      left: 29%;
+      left: 27%;
       height: 30%;
       width: 30%;
     }
@@ -37,33 +38,33 @@
 
     .four {
       top: 20%;
-      left: 3%;
+      left: 5%;
       z-index: 2;
       height: 25%;
       width: 25%;
     }
 
     .five {
-      top: 2%;
+      top: 1%;
       right: 0%;
       z-index: 1;
-      height: 25%;
-      width: 25%;
+      height: 35%;
+      width: 35%;
     }
 
     .six {
-      top: 15%;
+      top: 19%;
       right: 0%;
-      height: 28%;
-      width: 28%;
+      height: 33%;
+      width: 33%;
     }
 
     .seven {
-      top: 29%;
-      left: -12%;
+      top: 27%;
+      left: -13%;
       z-index: 1;
-      height: 30%;
-      width: 30%;
+      height: 35%;
+      width: 35%;
     }
 
     .eight {
@@ -78,20 +79,39 @@
     display: block;
     position: relative;
     margin: auto;
-    width: 80%;
+    width: 85%;
     z-index: 5;
+    text-align: center;
 
     h1 {
+      font-size: 35px;
+      line-height: 45px;
+      letter-spacing: 1px;
       color: white;
+      margin: auto;
+      margin-bottom: 12px;
     }
 
-    p {
-      color: white;
+    h4 {
+      color: rgb(223, 223, 223);
+      line-height: 18px;
+      margin-bottom: 25px;
     }
 
     button {
+      display: block;
+      width: 100%;
+      padding: 15px 0px;
+      border-radius: 9px;
+      border: none;
+      font-size: 15px;
       color: black;
       background-color: white;
+
+      &:active,
+      &:focus {
+        background-color: rgb(223, 223, 223);
+      }
     }
   }
 }

@@ -48,7 +48,7 @@ export default function Landing() {
           </svg>
         </div>
         <div className="circle six">
-          <svg viewBox="0 0 50 100">
+          <svg viewBox="0 0 55 100">
             <circle
               r="45"
               cx="50"
@@ -79,7 +79,7 @@ export default function Landing() {
       </div>
       <div className="text">
         <h1>{heading}</h1>
-        <p>{text}</p>
+        <h4>{text}</h4>
         <button>Start</button>
       </div>
     </div>

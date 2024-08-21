@@ -9,3 +9,28 @@ body {
   width: 100vw;
   overflow: hidden;
 }
+
+@font-face {
+  font-family: Roboto;
+  font-weight: 400;
+  src: url("./assets/fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: Roboto;
+  font-weight: 600;
+  src: url("./assets/fonts/Roboto-Bold.ttf");
+}
+
+* {
+  font-family: Roboto;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 600;
+}
