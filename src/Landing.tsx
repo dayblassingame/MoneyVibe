@@ -80,7 +80,7 @@ export default function Landing() {
       <div className="text">
         <h1>{heading}</h1>
         <h4>{text}</h4>
-        <button>Start</button>
+        <button className="button-white">Start</button>
       </div>
     </div>
   );
