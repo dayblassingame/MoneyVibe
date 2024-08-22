@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const Dotenv = require("dotenv-webpack");
 
 const ENTRY_PATH = path.resolve(__dirname, "./index");
 const DIST_PATH = path.resolve(__dirname, "dist");
@@ -8,6 +9,7 @@ module.exports = {
   entry: ENTRY_PATH,
   mode: "development",
   output: {
+    publicPath: "/",
     path: DIST_PATH,
     filename: "bundle.js",
     clean: true,
@@ -41,6 +43,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./public/index.html",
     }),
+    new Dotenv(),
   ],
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
@@ -49,5 +52,6 @@ module.exports = {
   devServer: {
     static: DIST_PATH,
     hot: true,
+    historyApiFallback: true,
   },
 };

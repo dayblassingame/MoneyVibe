@@ -3,7 +3,7 @@
     color: white;
   }
 
-  input[type="text"],
+  input[type="email"],
   input[type="password"] {
     display: block;
     width: 100%;
@@ -16,5 +16,12 @@
     font-size: 15px;
     color: white;
     background-color: transparent;
+  }
+
+  #error {
+    display: block;
+    width: fit-content;
+    color: red;
+    margin: 15px 0px;
   }
 }
