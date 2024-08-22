@@ -1,0 +1,25 @@
+* {
+  font-family: Roboto;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 600;
+  color: white;
+}
+
+h1 {
+  font-size: 35px;
+  line-height: 45px;
+  letter-spacing: 1px;
+}
+
+h4 {
+  line-height: 18px;
+}
+
+$border-radius: 9px;

@@ -1,15 +1,32 @@
-.button-white {
+.button-white,
+.button-black {
   display: block;
   width: 100%;
   padding: 15px 0px;
-  border-radius: 9px;
+  border-radius: $border-radius;
   border: none;
   font-size: 15px;
+
+  text-decoration: none;
+}
+
+.button-white {
   color: black;
   background-color: white;
 
   &:active,
   &:focus {
-    background-color: rgb(223, 223, 223);
+    background-color: $offwhite;
+  }
+}
+
+.button-black {
+  color: white;
+  background-color: rgb(39, 39, 39);
+
+  &:active,
+  &:focus {
+    border: 0.5px solid white;
+    background-color: transparent;
   }
 }

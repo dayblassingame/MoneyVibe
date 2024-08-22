@@ -1,5 +1,6 @@
 import React from "react";
-import "./stylesheets/pages/Landing.scss";
+import "./global.scss";
+import { Link } from "react-router-dom";
 
 export default function Landing() {
   const heading = "Manage your finances easily";
@@ -80,7 +81,9 @@ export default function Landing() {
       <div className="text">
         <h1>{heading}</h1>
         <h4>{text}</h4>
-        <button className="button-white">Start</button>
+        <Link to="/login" className="button-white">
+          Start
+        </Link>
       </div>
     </div>
   );
